@@ -17,7 +17,16 @@ body {
     height: 1000px;
 }
 
+.earth:hover, .water:hover, .air:hover, .fire2:hover {
+    transform: scale(1.5);
+    transition: transform .2s;
+}
+
 
 img {
-    width:35%;
+    width:25%;
+}
+
+a {
+    text-decoration: none;
 }
