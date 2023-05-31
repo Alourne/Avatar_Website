@@ -1,6 +1,8 @@
-
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/play-pause.css');
 body {
-    background-color: #252727;
+    /* background-color: #62c5c5; */
+    background-image: url(/images/aangbg.png);
+     /* 252727 */
     font-family: 'Herculanum';
     display: block;
     margin: 0;
@@ -15,6 +17,10 @@ body {
     align-items: center;
     text-align: center;
     height: 1000px;
+}
+
+.earth, .water, .fire2, .air {
+
 }
 
 .earth:hover, .water:hover, .air:hover, .fire2:hover {
@@ -34,3 +40,76 @@ body {
 a {
     text-decoration: none;
 }
+
+/* .btn {
+    cursor:pointer;
+    display:inline-block;
+    padding:30px;
+    background: #94a657;
+    border-radius: 4px;
+    color: #fff;
+    text-transform:uppercase;
+    line-height:20px;
+    @include transition(box-shadow .25s ease);
+    &:after{
+       content:'';
+       display:inline-block;
+       color: #070707;
+       background:#fff;
+       font-family: 'FontAwesome';
+       padding:3px;
+       border-radius: 50%;
+       height:20px;
+       width:20px;
+       margin-left:8px;
+       padding-left: 4.5px;
+       padding-right:1.5px;
+    }
+    &.playing{
+        &:after{
+          padding:3px;
+          content: "gg-play-pause";
+       }
+    }
+} */
+
+.gg-play-backwards {
+
+    transform: scale(var(--ggs,1));
+    width: 43px;
+    height: 40px;
+    padding: 50px;
+    margin: 40px;
+    background: red;
+    height: 230%;
+}
+/* .gg-play-backwards::after,
+.gg-play-backwards::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    padding: 50px;
+    background: red;
+    height: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 6px solid;
+    right: -7px
+} */
+.gg-play-backwards::before {
+    right: 14px
+}
+
+
+/* .btn {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 8px;
+    height: 10px;
+    border-left: 3px solid;
+    border-right: 3px solid
+} */
