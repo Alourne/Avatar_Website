@@ -19,9 +19,9 @@ body {
     height: 1000px;
 }
 
-.earth, .water, .fire2, .air {
+/* .earth, .water, .fire2, .air {
 
-}
+} */
 
 .earth:hover, .water:hover, .air:hover, .fire2:hover {
     transform: scale(1.5);
@@ -73,43 +73,64 @@ a {
     }
 } */
 
-.gg-play-backwards {
-
-    transform: scale(var(--ggs,1));
-    width: 43px;
-    height: 40px;
-    padding: 50px;
-    margin: 40px;
-    background: red;
-    height: 230%;
-}
-/* .gg-play-backwards::after,
-.gg-play-backwards::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 0;
-    padding: 50px;
-    background: red;
-    height: 10px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-right: 6px solid;
-    right: -7px
-} */
-.gg-play-backwards::before {
-    right: 14px
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.music-player {
+    background: #ffe0e5;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+}
 
-/* .btn {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 8px;
-    height: 10px;
-    border-left: 3px solid;
-    border-right: 3px solid
-} */
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #f53192;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #f53192;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #f53192;
+    color: #fff;
+}

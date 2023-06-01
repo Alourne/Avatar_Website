@@ -7,19 +7,24 @@
         <link rel="stylesheet" href="style.css">
         <script src="main.js" defer></script>
         <link rel="icon" type="iamge/x-icon" href="/images/Aang_Appa.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <<link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-backwards.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/dc7f1aa42c.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        
-            <audio id="avatar" src="/songs/Epic Agni kai.mp3" type="audio/mpeg">
+         <div class="container">
+            <div class="music-player">
+                <audio id="avatar" src="/songs/Epic Agni kai.mp3" type="audio/mpeg">
                     If youre reading this, it is because your browser does not support the audio element
-            </audio>
-            <i class="gg-play-backwards"></i>
-            <i class="btn gg-play-pause" id="song-btn"></i>
-            <!-- <i class="btn fa fa-play-circle" id="song-btn" style="font-size:36px;"></i> -->
-
-        
+                </audio>
+              </audio>
+                <input type="range" value="0" id="progress">
+                <div class="controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div id="ctrlIcon" class="fa-solid fa-play btn"></div>
+                    <!-- <i class="fa-solid fa-play btn"></i> -->
+                    <div id="muteIcon"><i class="fa-solid fa-volume-xmark"></i></div>
+                </div>
+         </div>
+       
         <div class="elements">
             <div class="one"> 
                 <a href="earthbenders.html"> <img class="earth" src="/images/Earth_White.png"> </a>
