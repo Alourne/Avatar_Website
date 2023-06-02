@@ -1,11 +1,11 @@
-/* .transition-1 {
+.transition-1 {
     position: fixed;
     top: 0%;
     left: 0%;
     right: 0;
     bottom: 0;
     z-index: 101;
-    background-image: url(images/airscooter.gif), url(images/bgBW.png);
+    background-image: url(/images/azulapixel.gif), url(/images/bgBW.png);
     opacity: 0;
     pointer-events: none;
     transition: .7s ease-out, 1s ease-out;
@@ -16,7 +16,7 @@
 .transition-1.is-active {
     opacity: 1;
     pointer-events: all;
-} */
+}
 
 body {
     background: url(/images/fireinterior.png);
@@ -28,12 +28,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* .fireIcon {
-    position: fixed;
-    top: -17.4%;
-    left: -7.45%;
-    transform: scale(.15);
-} */
 
 a {
     text-decoration: none;
@@ -59,17 +53,16 @@ a {
 }
 
 .fire-title {
+    position: fixed;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
     display: flex;
     justify-content: center;
-    margin-top: -40px;
+    margin-top: 73%;
     margin-left: 50%;
     margin-right: 50%;
     margin-bottom: -20px;
     color: white;
-    font-size: 20px;
+    font-size: 36px;
     letter-spacing: 3.5px;
     font-weight: 400;
     text-shadow: 0px 2px 3px #030303;  
@@ -85,23 +78,11 @@ a {
     gap: 7%;
 }
 
-.fire-card, .fire-card2, .fire-card3 {
+.fire-card, .fire-card2, .fire-card3, .fire-card4 {
     box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.52);
 }
 
-.fire-card:hover {
-    transform: scale(1.3);
-    transition: transform .2s;
-    cursor: pointer;
-}
-
-.fire-card2:hover {
-    transform: scale(1.3);
-    transition: transform .2s;
-    cursor: pointer;
-}
-
-.fire-card3:hover {
+.fire-card:hover, .fire-card2:hover,.fire-card3:hover, .fire-card4:hover {
     transform: scale(1.3);
     transition: transform .2s;
     cursor: pointer;

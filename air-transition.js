@@ -1,24 +1,10 @@
-// //  Transition
-// window.onload = () => {
-//     const transition_el = document.querySelector('.transition');
-//     setTimeout(() => {
-//         transition_el.classList.remove("is-active");
-//     }, 1000);
-// }
-
-// $(".air-card").click(function(){
-//     $(this).toggleClass("airCard")  ; 
-//    })
-
-// function diffImage(img) {
-//     if (img.src.match(/blank/))
-//     {
-//         img.src = "images/Aang_air.jpg";
-//     }
-//     else {
-//         img.src = "images/monkgyatso.jpg";
-//     }
-// }
+//  Transition
+window.onload = () => {
+    const transition_el = document.querySelector('.transition');
+    setTimeout(() => {
+        transition_el.classList.remove("is-active");
+    }, 700);
+}
 
 function changeImage() {
     let displayImage = document.getElementById("image1");

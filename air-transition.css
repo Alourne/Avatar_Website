@@ -1,4 +1,4 @@
-/* .transition-1 {
+.transition-1 {
     position: fixed;
     top: 0%;
     left: 0%;
@@ -16,7 +16,7 @@
 .transition-1.is-active {
     opacity: 1;
     pointer-events: all;
-} */
+}
 
 body {
     background: url(images/airtemple.jpg);
@@ -58,9 +58,6 @@ a {
 }
 
 .air-title {
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
     display: flex;
     justify-content: center;
     margin-top: -40px;
@@ -109,14 +106,4 @@ a {
     max-height: 50%;
     /* width: 35%; */
 	transition: .3s ease-in-out;
-}
-
-
-.airbenders-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px 3px black;
 }

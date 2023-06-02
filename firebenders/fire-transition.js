@@ -1,24 +1,11 @@
-// //  Transition
-// window.onload = () => {
-//     const transition_el = document.querySelector('.transition');
-//     setTimeout(() => {
-//         transition_el.classList.remove("is-active");
-//     }, 1000);
-// }
+//  Transition
+window.onload = () => {
+    const transition_el = document.querySelector('.transition');
+    setTimeout(() => {
+        transition_el.classList.remove("is-active");
+    }, 1300);
+}
 
-// $(".air-card").click(function(){
-//     $(this).toggleClass("airCard")  ; 
-//    })
-
-// function diffImage(img) {
-//     if (img.src.match(/blank/))
-//     {
-//         img.src = "images/Aang_air.jpg";
-//     }
-//     else {
-//         img.src = "images/monkgyatso.jpg";
-//     }
-// }
 
 function changeImageZuko() {
     let displayImage = document.getElementById("image1");
@@ -29,7 +16,7 @@ function changeImageZuko() {
     } else if(displayImage.src.match("/images/Zuko&Mai.jpg")) {
         displayImage.src = "/images/Zuko2.jpg"
     } else if(displayImage.src.match("/images/Zuko2.jpg")) {
-        displayImage.src = "/images/Zuko3.jpg"
+        displayImage.src = "/images/zukofixed.png"
     } else {
         displayImage.src = "/images/Zuko.jpg"
     }
